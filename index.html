@@ -1,0 +1,446 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Descubre Perú | Turismo y Cultura</title>
+
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="#inicio">
+                <i class="bi bi-globe-americas"></i>
+                Descubre <span>Perú</span>
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#inicio">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#destinos">Destinos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nosotros">Nosotros</a>
+                    </li>
+
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-nav" href="#destinos">
+                            Explorar ahora
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- PORTADA PRINCIPAL / JUMBOTRON -->
+    <header class="hero" id="inicio">
+
+        <div class="hero-overlay"></div>
+
+        <div class="container hero-content">
+
+            <span class="hero-tag">
+                <i class="bi bi-geo-alt-fill"></i>
+                UN DESTINO EXTRAORDINARIO
+            </span>
+
+            <h1>
+                Descubre la magia<br>
+                del <span>Perú</span>
+            </h1>
+
+            <p>
+                Vive experiencias inolvidables, descubre culturas milenarias
+                y enamórate de los paisajes más maravillosos de nuestro país.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#destinos" class="btn btn-explorar">
+                    Explorar destinos
+                    <i class="bi bi-arrow-up-right"></i>
+                </a>
+
+                <a href="#nosotros" class="btn btn-outline-light btn-conocer">
+                    Conoce nuestro Perú
+                </a>
+
+            </div>
+
+            <div class="hero-bottom">
+                <i class="bi bi-chevron-double-down"></i>
+                <span>DESCUBRE NUEVOS LUGARES</span>
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- SECCIÓN DE DESTINOS -->
+    <section class="destinos-section py-5" id="destinos">
+
+        <div class="container">
+
+            <div class="section-heading text-center">
+
+                <span class="section-tag">LUGARES INCREÍBLES</span>
+
+                <h2>Explora nuestros destinos</h2>
+
+                <p>
+                    Desde antiguas ciudades incas hasta impresionantes
+                    paisajes naturales. ¡El Perú te espera!
+                </p>
+
+            </div>
+
+
+            <div class="row g-4 mt-3">
+
+                <!-- MACHU PICCHU -->
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="card destination-card h-100">
+
+                        <div class="card-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1526392060635-9d6019884377?w=900"
+                                class="card-img-top"
+                                alt="Ciudadela de Machu Picchu">
+
+                            <span class="destination-label">
+                                <i class="bi bi-geo-alt-fill"></i> Cusco
+                            </span>
+                        </div>
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">Machu Picchu</h5>
+
+                            <p class="card-text">
+                                Descubre la impresionante ciudadela inca,
+                                rodeada de montañas y llena de historia.
+                            </p>
+
+                            <button class="btn btn-destino"
+                                data-destino="machu">
+                                Conocer más
+                                <i class="bi bi-arrow-right"></i>
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- LAGO TITICACA -->
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="card destination-card h-100">
+
+                        <div class="card-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1531968455001-5c5272a41129?w=900"
+                                class="card-img-top"
+                                alt="Paisaje del Lago Titicaca">
+
+                            <span class="destination-label">
+                                <i class="bi bi-geo-alt-fill"></i> Puno
+                            </span>
+                        </div>
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">Lago Titicaca</h5>
+
+                            <p class="card-text">
+                                Conoce el lago navegable más alto del mundo
+                                y sus tradicionales islas flotantes.
+                            </p>
+
+                            <button class="btn btn-destino"
+                                data-destino="titicaca">
+                                Conocer más
+                                <i class="bi bi-arrow-right"></i>
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- AMAZONÍA -->
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="card destination-card h-100">
+
+                        <div class="card-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=900"
+                                class="card-img-top"
+                                alt="Naturaleza de la Amazonía">
+
+                            <span class="destination-label">
+                                <i class="bi bi-geo-alt-fill"></i> Amazonía
+                            </span>
+                        </div>
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">Amazonía peruana</h5>
+
+                            <p class="card-text">
+                                Explora la selva amazónica y su extraordinaria
+                                biodiversidad de flora y fauna.
+                            </p>
+
+                            <button class="btn btn-destino"
+                                data-destino="amazonia">
+                                Conocer más
+                                <i class="bi bi-arrow-right"></i>
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECCIÓN NOSOTROS -->
+    <section class="about-section py-5" id="nosotros">
+
+        <div class="container">
+
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-6">
+
+                    <div class="about-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1000"
+                            alt="Paisajes naturales de los Andes peruanos">
+
+                        <div class="image-badge">
+                            <i class="bi bi-heart-fill"></i>
+                            <span>Orgullosos de nuestro Perú</span>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-6">
+
+                    <span class="section-tag">NUESTRA IDENTIDAD</span>
+
+                    <h2 class="about-title">
+                        Un país lleno de historia,
+                        cultura y tradición.
+                    </h2>
+
+                    <p class="about-text">
+                        El Perú es un país extraordinario que reúne
+                        una gran diversidad de culturas, tradiciones,
+                        gastronomía y paisajes naturales.
+                    </p>
+
+                    <p class="about-text">
+                        Desde la costa hasta los Andes y la Amazonía,
+                        cada rincón ofrece experiencias únicas que
+                        nos hacen sentir orgullosos de nuestra tierra.
+                    </p>
+
+                    <div class="about-features">
+
+                        <div>
+                            <i class="bi bi-mountain"></i>
+                            <span>Paisajes únicos</span>
+                        </div>
+
+                        <div>
+                            <i class="bi bi-buildings"></i>
+                            <span>Historia milenaria</span>
+                        </div>
+
+                        <div>
+                            <i class="bi bi-egg-fried"></i>
+                            <span>Gastronomía increíble</span>
+                        </div>
+
+                    </div>
+
+                    <button class="btn btn-explorar mt-4"
+                        onclick="saludar()">
+                        ¡Viva el Perú!
+                        <i class="bi bi-heart-fill"></i>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECCIÓN FINAL -->
+    <section class="final-section">
+
+        <div class="container text-center">
+
+            <h2>¡El Perú tiene mucho por descubrir!</h2>
+
+            <p>
+                Prepara tu próxima aventura y descubre la belleza
+                de nuestro maravilloso país.
+            </p>
+
+            <a href="#destinos" class="btn btn-final">
+                Comenzar aventura
+                <i class="bi bi-arrow-right"></i>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="row align-items-center text-center text-md-start">
+
+                <div class="col-md-6">
+
+                    <h5>
+                        <i class="bi bi-globe-americas"></i>
+                        Descubre Perú
+                    </h5>
+
+                    <p>
+                        Conoce, explora y enamórate del Perú.
+                    </p>
+
+                </div>
+
+                <div class="col-md-6 text-md-end">
+
+                    <p class="copyright">
+                        © 2026 Descubre Perú. Todos los derechos reservados.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- VENTANA MODAL PARA LOS DESTINOS -->
+    <div class="modal fade" id="modalDestino" tabindex="-1"
+        aria-labelledby="modalTitulo" aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h5 class="modal-title" id="modalTitulo">
+                        Descubre Perú
+                    </h5>
+
+                    <button type="button" class="btn-close"
+                        data-bs-dismiss="modal" aria-label="Cerrar">
+                    </button>
+
+                </div>
+
+                <div class="modal-body" id="modalDescripcion">
+                    Conoce nuestros maravillosos destinos turísticos.
+                </div>
+
+                <div class="modal-footer">
+
+                    <button type="button" class="btn btn-explorar"
+                        data-bs-dismiss="modal">
+                        ¡Entendido!
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- MENSAJE DE BIENVENIDA -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+
+        <div id="mensajeToast" class="toast" role="alert">
+
+            <div class="toast-header">
+                <strong class="me-auto">🇵🇪 Descubre Perú</strong>
+                <button type="button" class="btn-close"
+                    data-bs-dismiss="toast"></button>
+            </div>
+
+            <div class="toast-body">
+                ¡Bienvenido! El Perú es maravilloso. ❤️
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript personalizado -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+
